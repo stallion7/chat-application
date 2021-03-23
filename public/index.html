@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Chat</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+  <body id="body">
+      <div id="nadpis" class="jumbotron text-center bg-light my-4 p-2 mb-4 col-md-6 mx-auto">
+        <h1 class="text-center my-2">Přihlášení</h1>
+      </div>
+			<main class="join-main col-md-4">
+                <div class="col-sm-12 text-center">
+				<form action="chat.html">
+						<label class="p-2 my-4 text-white" for="username"><b>Uživatelské Jméno</b></label>
+						<input class="bg-light"
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+                    </div>
+                    <div class="col-sm-12 text-center">
+						<label class="p-2 my-2 text-white" for="room"><b>Skupina</b></label>
+						<select class="bg-light" name="room" id="room">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Python">Python</option>
+							<option value="PHP">PHP</option>
+							<option value="C#">C#</option>
+							<option value="Ruby">Ruby</option>
+							<option value="Java">Java</option>
+						</select>
+                        </div>
+                        <div class="col-sm-12 my-2 text-center">
+					<button type="submit" id="btn" class="btn btn-light my-2"><b>Join Chat</b></button>
+				</div>
+                </form>
+			</main>
+            <footer class="container-fluid">
+                <div class="jumbotron text-center bg-light p-3 my-1 col-md-3 mx-auto" id="footer">
+                  &copy; 2020 - <b>SŠPU Opava</b> - Štěpán Krautwurst
+                </div>
+              </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

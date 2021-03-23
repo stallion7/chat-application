@@ -1,0 +1,12 @@
+body{
+    background-image: url(img/chat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+main {
+    width: 600px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: white;
+}
