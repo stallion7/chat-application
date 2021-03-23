@@ -1,12 +1,30 @@
 body{
-    background-image: url(img/chat.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
+ background-color: gray;
 }
 main {
     width: 600px;
     text-align: center;
     margin: 30px auto;
     background-color: white;
+}
+#leave-btn{
+    border: 0;
+    position: relative;
+    transform: translateY(-98px);
+    
+}
+#users{
+    font-size: 20px;
+    position: relative;
+    transform: translateY(-60px);
+}
+#nadpis-user{
+    transform: translateY(-42px);
+}
+#send-btn{
+    padding: 2px 15px;
+}
+#uzivatel{
+    transform: translateY(-110px);
+    font-size: 20px;
 }

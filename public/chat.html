@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/chat.css">
@@ -13,25 +15,33 @@
 <body>
   <div class="chat-container">
     <header class="chat-header">
-      <h1 class="col-md-4 mx-auto text-center"><i class="fas fa-smile"></i> ChatCord</h1>
-      <a href="index.html" class="btn">Leave Room</a>
+      <h1 id="nadpis" class="jumbotron text-center text-light bg-dark my-4 p-3 mb-4 col-md-6 mx-auto">
+        Chat</h1>
     </header>
-    <main class="chat-main">
+    <main class="chat-main col-xl-5">
       <div class="chat-sidebar">
-        <h3><i class="fas fa-comments"></i> Room Name:</h3>
-        <h2 id="room-name">JavaScript</h2>
-        <h3><i class="fas fa-users"></i> Users</h3>
-        <ul id="users"></ul>
+        <h3 id="room" class="text-left p-3 my-0"><i class="fas fa-comments"></i> Room Name</h3>
+        <h2 class=" text-left ml-3" id="room-name">JavaScript</h2>
+        <div class="text-right">
+        <a id="leave-btn" href="index.html" class="btn btn-dark"> Leave Room</a>
       </div>
-      <div class="chat-messages"></div>
+        <h3 id="nadpis-user" class="text-left p-3"><i class="fas fa-users"></i> Users</h3>
+        <ul class="text-left" id="users"></ul>
+      </div>
+      <div id="uzivatel" class="chat-messages"></div>
       <div class="chat-form-container">
         <form id="chat-form">
-          <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
-          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+          <input class="col-sm-10 mb-1" id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+          <button id="send-btn" class="btn btn-dark mb-1"><i class="fas fa-paper-plane"></i> Send</button>
         </form>
       </div>
   </div>
   </main>
+  <footer class="container-fluid align-text-bottom">
+    <div class="jumbotron text-center bg-dark text-light p-3 my-1 col-md-3 mx-auto" id="footer">
+      &copy; 2020 - <b>SŠPU Opava</b> - Štěpán Krautwurst
+    </div>
+  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
     integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="
     crossorigin="anonymous"></script>
